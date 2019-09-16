@@ -25,7 +25,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+# theme: minima
+# Try jekyll-Gesko
+# https://github.blog/2017-11-29-use-any-theme-with-github-pages/
+remote_theme: p0wex/Gesko
 # plugins:
 #   - jekyll-feed
 
