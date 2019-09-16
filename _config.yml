@@ -26,16 +26,14 @@ lang: en-US
 data-theme: light
 
 # url:
+url: "http://jgafnea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://jgafnea.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 # theme: minima
 # Try jekyll-Gesko
 # https://github.blog/2017-11-29-use-any-theme-with-github-pages/
-# remote_theme: p0wex/Gesko
-# plugins:
-#   - jekyll-feed
+remote_theme: p0wex/Gesko
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,16 +52,17 @@ exclude:
   - .obsidian
   - Gemfile
   - Gemfile.lock
-  - LICENSE.md
-  - README.md
-  - CONTRIBUTING.md
+#   - LICENSE.md
+#   - README.md
+#   - CONTRIBUTING.md
 
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
-  - jekyll-relative-links
+  - jekyll-paginate
+  - jekyll-include-cache
 
 collections:
   pages:
@@ -88,15 +87,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+relative_links:
+  enabled: true
+  collections: false
