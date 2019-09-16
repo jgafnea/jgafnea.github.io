@@ -18,17 +18,22 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Jekyll
+site: Gesko
+title: Gesko
 description: >- # this means to ignore newlines until "baseurl:"
   description
+lang: en-US
+data-theme: light
+
+# url:
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://jgafnea.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 # theme: minima
 # Try jekyll-Gesko
 # https://github.blog/2017-11-29-use-any-theme-with-github-pages/
-remote_theme: p0wex/Gesko
+# remote_theme: p0wex/Gesko
 # plugins:
 #   - jekyll-feed
 
@@ -39,6 +44,50 @@ remote_theme: p0wex/Gesko
 #
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-relative-links
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 #
 # exclude:
 #   - .sass-cache/
