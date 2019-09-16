@@ -26,14 +26,14 @@ lang: en-US
 data-theme: light
 
 # url:
-url: "http://jgafnea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+# url: "http://jgafnea.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 # theme: minima
 # Try jekyll-Gesko
 # https://github.blog/2017-11-29-use-any-theme-with-github-pages/
-remote_theme: p0wex/Gesko
+# remote_theme: p0wex/Gesko
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,9 +49,9 @@ kramdown:
 
 exclude:
   - .jekyll-cache
-  - .obsidian
-  - Gemfile
-  - Gemfile.lock
+  # - .obsidian
+  # - Gemfile
+  # - Gemfile.lock
 #   - LICENSE.md
 #   - README.md
 #   - CONTRIBUTING.md
