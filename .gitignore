@@ -1,3 +1,4 @@
 _site/
 *backup*
 ignore/*
+Makefile
