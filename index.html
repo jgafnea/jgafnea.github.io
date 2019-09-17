@@ -1,10 +1,11 @@
 ---
 layout: default
-title: GHP with Jekyll
+title: "index.html"
 index: 1
 ---
+
 <ul class="index">
-  {% for post in site.posts %}
-  <li data-date="{{post.date | date_to_string }}" class="fav"><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+    {% for post in site.posts %}
+    <li data-date="{{post.date | date_to_string }}" class="fav"><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
 </ul>
