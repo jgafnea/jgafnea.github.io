@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{% assign post = page %}
+<article class="post">
+    <h1>{{ post.title }}</h1>
+    {{ content }}
+    <div class="date">~ {{post.date | date_to_string }}</div>
+</article>
