@@ -3,7 +3,6 @@
 
 @import 'normalize';
 
-
 $bgColor: #fcfcfc;
 $textColor: #333;
 $textColor2: lighten($textColor, 33%);
@@ -93,17 +92,6 @@ h2 {
     margin: 2em auto 0 auto !important;
   }
 
-  .xkcd {
-    margin: 3em auto;
-    color: $textColor2;
-    text-align: center;
-    font-style: italic;
-
-    a {
-      color: inherit;
-      font-style: normal;
-    }
-  }
 }
 
 header {
@@ -325,7 +313,7 @@ ul.index {
   text-align: right;
   font-size: .8em;
   color: $textColor2;
-  font-weight: 300;
+  // font-weight: 300;
 }
 
 table {
