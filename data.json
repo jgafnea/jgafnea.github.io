@@ -99,7 +99,7 @@
     {
       "name": "Portfolio",
       "isActive": true,
-      "description": "Online portfolio created to show examples of code used to solve problems (small ones, admittedly). Uses CI/CD to automate build and deployment to GitHub Pages.",
+      "description": "Online portfolio created to show actual code written to solve real problems. Uses CI/CD to automate build and deployment to GitHub Pages.",
       "highlights": ["TypeScript", "Astro", "GitHub Actions"],
       "url": "https://github.com/jgafnea/jgafnea.github.io"
     }
