@@ -2,13 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PDF</title>
     <!-- Method 1: Redirect after 0.1 seconds -->
     <!--<meta http-equiv="refresh" content="0; url=assets/resume.pdf" />-->
+    <style>
+      body {
+        margin: 0; /* Remove default margin */
+      }
+      iframe {
+        display: block; /* iframes are inline by default */
+        height: 100vh; /* Set height to 100% of the viewport height */
+        width: 100vw; /* Set width to 100% of the viewport width */
+        border: none; /* Remove default border */
+        background: lightgray; /* Just for styling */
+      }
+    </style>
   </head>
   <body>
-    <!-- Method 2: Embed PDF -->
-    <iframe src="assets/resume.pdf" width="100%" height="100%"></iframe>
+    <!-- Method 2: Embed -->
+    <iframe src="assets/resume.pdf"></iframe>
   </body>
 </html>
