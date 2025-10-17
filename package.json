@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy": "gh-pages -d dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@fontsource-variable/roboto-slab": "^5.2.8",
@@ -17,7 +16,6 @@
     "astro-icon": "^1.1.5"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "unocss": "^66.5.4"
   }
 }
