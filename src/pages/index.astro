@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Icon } from 'astro-icon/components';
+// import { GithubIcon, LinkedinIcon, MailIcon } from 'lucide-react';
+---
+
+
+
+
+
+<Layout title="John Gafnea">
+  <div class="flex flex-col items-center w-full h-full justify-center md:px-0 px-2">
+    <h1 class="dark:text-white m-0 p-0 text-[2.5rem] md:text-[5rem] text-center font-extrabold">
+      John Gafnea
+    </h1>
+    <h2 class="dark:text-white md:text-[2rem] text-[1.2rem] text-center font-light">
+      <span>Versatile | Collaborative | Does the Needful</span>
+    </h2>
+
+    <div class="flex space-x-6 dark:text-white text-black justify-center mt-6">
+      <a href="mailto:jgafnea@gmail.com" target="_blank" aria-label="jgafnea send an email">
+        <Icon name="lucide:mail" height="30" width="30" />
+      </a>
+      <a href="https://linkedin.com/in/jgafnea" target="_blank" aria-label="jgafnea linkedin page">
+        <Icon name="lucide:linkedin" height="30" width="30" />
+      </a>
+      <a href="https://github.com/jgafnea" target="_blank" aria-label="jgafnea github page">
+        <Icon name="lucide:github" height="30" width="30" />
+      </a>
+    </div>
+  </div>
+</Layout>
+
